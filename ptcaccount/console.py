@@ -47,9 +47,7 @@ def entry():
 
         # Display the account credentials
         print('Created new account:')
-        print('  Username:  {}'.format(account_info[USERNAME]))
-        print('  Password:  {}'.format(account_info[PASSWORD]))
-        print('  Email   :  {}'.format(account_info[EMAIL]))
+        print('  {}:{}'.format(account_info[USERNAME]), account_info[PASSWORD])
 
     # Handle account creation failure exceptions
     except PTCInvalidPasswordException as err:
